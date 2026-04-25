@@ -1,0 +1,8 @@
+name : First Demo
+on: [push,workflow_dispatch]
+jobs:
+  name: "Print Hello World"
+  runs-on: ubuntu-latest
+  steps:
+    echo:
+      Hello World
