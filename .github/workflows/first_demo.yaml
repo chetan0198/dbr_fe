@@ -1,6 +1,7 @@
 name: First Demo
 on: [push, workflow_dispatch]
 jobs:
+  needs: Print Hello World2
   print-hello:
     name: Print Hello World
     runs-on: ubuntu-latest
