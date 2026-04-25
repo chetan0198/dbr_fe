@@ -5,22 +5,22 @@ on:
     workflows: ["First Demo"]
     types: [completed]
     
-    jobs:
-      print-hi:
-        needs: print-hi2
-        name: Print hi World
-        runs-on: ubuntu-latest
-    
-        steps:
-          - name: Echo message
-            run: echo "hi World"
-    
-    
-      print-hi2:
-        needs: print-hi
-        name: Print hi World2
-        runs-on: ubuntu-latest
-    
-        steps:
-          - name: Echo message2
-            run: echo "hi World2"
+jobs:
+  print-hi:
+    needs: print-hi2
+    name: Print hi World
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Echo message
+        run: echo "hi World"
+
+
+  print-hi2:
+    needs: print-hi
+    name: Print hi World2
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Echo message2
+        run: echo "hi World2"
