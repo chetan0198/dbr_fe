@@ -12,7 +12,7 @@ jobs:
 
 
   print-hello2:
-    
+    needs: print-hello
     name: Print Hello World2
     runs-on: ubuntu-latest
 
