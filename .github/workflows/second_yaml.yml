@@ -7,7 +7,6 @@ on:
     
 jobs:
   print-hi:
-    needs: print-hi2
     name: Print hi World
     runs-on: ubuntu-latest
 
