@@ -12,9 +12,9 @@ jobs:
 
   jobs:
     print-hello2
-    name: Print Hello World2
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: Echo message2
-        run: echo "Hello World2"
+      name: Print Hello World2
+      runs-on: ubuntu-latest
+  
+      steps:
+        - name: Echo message2
+          run: echo "Hello World2"
