@@ -1,8 +1,10 @@
-name : First Demo
-on: [push,workflow_dispatch]
+name: First Demo
+on: [push, workflow_dispatch]
 jobs:
-  name: "Print Hello World"
-  runs-on: ubuntu-latest
-  steps:
-    echo:
-      Hello World
+  print-hello:
+    name: Print Hello World
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Echo message
+        run: echo "Hello World"
