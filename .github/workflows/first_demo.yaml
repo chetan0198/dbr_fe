@@ -8,3 +8,11 @@ jobs:
     steps:
       - name: Echo message
         run: echo "Hello World"
+
+  jobs:
+    name: Print Hello World2
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Echo message2
+        run: echo "Hello World2"
